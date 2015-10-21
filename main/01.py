@@ -1,5 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-#Caesar cipher
+#Caesar cipher, wikipedia
 
 import string
 
