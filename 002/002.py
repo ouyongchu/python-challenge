@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#find the rare characters
 #a.txt is a file containing the raw text
 
 f = "".join(open('a.txt','r').readlines()).replace('\n','')
