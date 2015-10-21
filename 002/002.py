@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#a.txt is a file contain the raw text
+#a.txt is a file containing the raw text
 
 f = "".join(open('a.txt','r').readlines()).replace('\n','')
 d = {}
