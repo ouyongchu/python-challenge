@@ -5,8 +5,8 @@
 
 import string
 
-low_letters = sting.lowercase
-table = string.maketrans(low_letters,low_letters[:2]+low_letters[:2])
+low_letters = string.lowercase
+table = string.maketrans(low_letters,low_letters[2:]+low_letters[:2])
 
 text = '''g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. 
 bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle.
