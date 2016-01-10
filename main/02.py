@@ -8,8 +8,7 @@ d = {}
 rare = set()
 answer = []
 for i in f:
-    for j in i:
-        d[j]=d.get(j,0)+1
+    d[i]=d.get(i,0)+1
 for i in d:
     if d[i] < 10:
         rare.add(i)
