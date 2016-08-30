@@ -9,3 +9,9 @@ import re
 
 html = urllib2.urlopen('http://www.pythonchallenge.com/pc/def/equality.html').read()
 print ''.join(re.findall('[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]',html))
+
+#  python 3, 获取的html为bytes like object, 需要解码为对应字符
+#from urllib.request import urlopen
+#
+#html = urlopen('http://www.pythonchallenge.com/pc/def/equality.html').read()
+#print ''.join(re.findall('[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]',html.decode('utf-8')))
