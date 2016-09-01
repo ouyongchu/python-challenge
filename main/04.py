@@ -9,9 +9,9 @@ num_pat = re.compile('([0-9]+)')
 
 while True:
 	res = urlopen(url).read().decode('utf-8').strip()
-	print(res)
-	num = num_pat.search(res).group(1)
-	print(num)
-	if not num:
+	try:
+		num = num_pat.search(res).group(1)
+	except Exception:
+		print(res)
 		break
 	url = url_prefix + num
